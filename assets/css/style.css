@@ -430,19 +430,11 @@ main {
 .social-item .social-link:hover { color: var(--light-gray); }
 
 
-
-
-
- /* NAVBAR */
+/* NAVBAR */
       .navbar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
         background: hsla(240, 1%, 17%, 0.75);
         backdrop-filter: blur(10px);
         border: 1px solid var(--jet);
-        border-radius: 0 0 12px 12px;
         box-shadow: var(--shadow-2);
         z-index: 1000;
       }
@@ -457,7 +449,6 @@ main {
       
       .navbar-link {
         color: var(--light-gray);
-        font-size: var(--fs-8);
         padding: 20px 7px;
         transition: color var(--transition-1);
       }
@@ -466,7 +457,6 @@ main {
       .navbar-link:focus { color: var(--light-gray-70); }
       
       .navbar-link.active { color: var(--orange-yellow-crayola); }
-
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
@@ -1525,10 +1515,27 @@ textarea.form-input::-webkit-resizer { display: none; }
  * responsive larger than 768px screen
  */
 
-@media (max-width: 768px) {
+     @media (max-width: 768px) {
+        .navbar {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          border-radius: 20px 20px 0 0;
+        }
+        
+        .navbar-list {
+          gap: 20px;
+        }
+        
+        .navbar-link {
+          font-size: 14px;
+        }
+        
         .main-content {
           margin-top: 60px;
         }
+      }
 
 @media (min-width: 768px) {
 
