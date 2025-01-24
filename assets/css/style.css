@@ -1545,6 +1545,9 @@ textarea.form-input::-webkit-resizer { display: none; }
         .main-content {
           margin-top: 70px;
         }
+	.sidebar-info {
+          margin-top: 80px; /* Adds space below the navbar for profile visibility */
+        }
       }
 
 @media (min-width: 768px) {
