@@ -297,6 +297,10 @@ main {
   #SIDEBAR
 \*-----------------------------------*/
 
+.sidebar-info {
+          margin-top: 80px; /* Adds space below the navbar for profile visibility */
+        }
+
 .sidebar {
   margin-bottom: 15px;
   max-height: 112px;
