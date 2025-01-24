@@ -302,7 +302,7 @@ main {
   max-height: 112px;
   overflow: hidden;
   transition: var(--transition-2);
-  margin-top: 100px;
+  
 }
 
 .sidebar.active { max-height: 405px; }
